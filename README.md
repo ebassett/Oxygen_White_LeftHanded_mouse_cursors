@@ -13,3 +13,8 @@ The (X11) mouse cursors (pointers) that come with (among others) openSUSE KDE in
 
   **=> You should probably just use the above version rather than this one.**
 
+
+# INSTALLATION
+  If you *really* want to ignore the above warning and use these anyway, you are better off to grab just the tarball and unpack it into either /usr/share/icons/ or ~/.icons/ depending on whether you want them globally available or just for your current user.
+  The reason that the tarball is better than fetching all of the loose files is that the former preserves the symlinks, of which there are (by X11 design) *many*; but I think that git[hub] does not naturally preserve symlinks, so you will end up with either a bunch of broken links (and hence cursors) or (more likely) a whole bunch of separate *copies* of the various mouse cursors (which would work, but would be a waste of disk space (not very much, in actuality, but still, it's the principle of the thing) and a maintenance nightmare (not that you probably would actually throw much (any) maintenance at your mouse cursors - but again, it's the principle of the thing)).
+
